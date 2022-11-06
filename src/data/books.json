@@ -1,7 +1,1 @@
-[
-    {
-        "id": 1,
-        "book_name": "Fundamentals of Computer",
-        "book_qty": 2
-    }
-]
+[{"id":1,"book_name":"Fundamentals of Computer","book_qty":3},{"id":2,"book_name":"Database Management System","book_qty":2},{"id":3,"book_name":"Transaction Processing","book_qty":2},{"id":4,"book_name":"Data Warehouse Technologies","book_qty":5},{"id":5,"book_name":"Distributed Data Management","book_qty":3},{"id":6,"book_name":"Information Retrieval","book_qty":4}]

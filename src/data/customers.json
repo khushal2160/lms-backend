@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "customer_name": "Khushal Mangukiya",
+        "customer_email": "khushalmangukiya@gmail.com",
+        "password": "khushal1234"
+    },
+    {
+        "id": 2,
+        "customer_name": "Kishan Paladiya",
+        "customer_email": "kishanpaladiya@gmail.com",
+        "password": "kishan1234"
+    },
+    {
+        "id": 3,
+        "customer_name": "John Carter",
+        "customer_email": "johncarter@gmail.com",
+        "password": "johnc333"
+    },
+    {
+        "id": 4,
+        "customer_name": "Eike Schiller",
+        "customer_email": "eikemann@gmail.com",
+        "password": "eikes555"
+    }
+]
