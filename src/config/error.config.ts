@@ -24,16 +24,15 @@ export class APIError extends Error {
 
 export function APIErrorHandler(err: APIError, req: Request, res: Response, next: NextFunction) {
     if (err) {
-        console.log(err);
 
         if (!err.data) {
-            return res.sendStatus(err.statusCode);
+            return res.sendStatus(err.statusCode)
         }
 
         return res.status(err.statusCode).json({
             success: false,
             ...err.data
-        });
+        })
     }
-    next(err);
+    next(err)
 }

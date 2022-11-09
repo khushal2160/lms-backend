@@ -7,6 +7,7 @@ import { getBorrows, getCustomerBorrows } from "./data.service"
 export const validateBorrow = (book_id: number, customer_id: number) => {
     const borrows: IBorrow[] = getCustomerBorrows(customer_id)
     let totalBorrows = 0
+    const validatedBorrows = []
     for (const borrow of borrows) {
         if (borrow.customer_id === customer_id) {
             if (borrow.book_id === book_id) {
@@ -23,8 +24,13 @@ export const validateBorrow = (book_id: number, customer_id: number) => {
                 })
             }
         }
+        validatedBorrows.push({
+            id: borrow.id,
+            book_id: borrow.book_id,
+            customer_id: borrow.customer_id
+        })
     }
-    return borrows
+    return validatedBorrows
 }
 
 export const updateBorrow = (book_id: number, customer_id: number) => {
